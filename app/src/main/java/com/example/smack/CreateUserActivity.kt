@@ -1,5 +1,6 @@
 package com.example.smack
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -36,6 +37,17 @@ binding.createAvatarImageView.setImageResource(resourseID)
 
     }
     fun generateColorClicked(view: View){
+        val random= Random()
+        val r = random.nextInt(255)
+        val g = random.nextInt(255)
+        val b = random.nextInt(255)
+        println( " $r $g $b")
+        binding.createAvatarImageView.setBackgroundColor(Color.rgb(r,g,b))
+        val saveR=r.toDouble()/255
+        val saveG=g.toDouble()/255
+        val saveB=b.toDouble()/255
+        avatarColor="[$saveR,$saveG,$saveB,1]"
+        println(avatarColor)
 
     }
 }

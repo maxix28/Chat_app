@@ -50,7 +50,7 @@
         android:id="@+id/LoginBtnNavHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/side_nav_bar"
+        android:background="@color/design_default_color_secondary_variant"
         android:onClick="LoginBtnClicked"
         android:text="LOGIN"
         app:layout_constraintBottom_toBottomOf="parent"
